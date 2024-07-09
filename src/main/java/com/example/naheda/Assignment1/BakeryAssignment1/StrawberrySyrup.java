@@ -5,11 +5,8 @@ import org.springframework.stereotype.Component;
 
 @Component
 @ConditionalOnProperty(name="flavor", havingValue = "Strawberry")
-public class Strawberry implements  FroastingInt, SyrupInt{
-    @Override
-    public String getFroastingType() {
-        return "Strawberry froasting";
-    }
+public class StrawberrySyrup implements SyrupInt{
+
 
     @Override
     public String getSyrupType() {
